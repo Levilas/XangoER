@@ -198,108 +198,107 @@ class Dynamics:
 
         # Valores experimentais para a curva de torque e potência
         matriz_dados = [
-            {"rpm": 0, "ptc": 0.0, "trq": 200.0},
-            {"rpm": 375, "ptc": 1.5, "trq": 198.5},
-            {"rpm": 750, "ptc": 4.0, "trq": 197.0},
-            {"rpm": 1125, "ptc": 7.0, "trq": 195.5},
-            {"rpm": 1500, "ptc": 10.5, "trq": 194.0},
-            {"rpm": 1875, "ptc": 14.0, "trq": 192.5},
-            {"rpm": 2250, "ptc": 17.5, "trq": 191.0},
-            {"rpm": 2625, "ptc": 21.0, "trq": 189.5},
-            {"rpm": 3000, "ptc": 24.5, "trq": 188.0},
-            {"rpm": 3375, "ptc": 28.0, "trq": 186.5},
-            {"rpm": 3750, "ptc": 31.5, "trq": 185.0},
-            {"rpm": 4125, "ptc": 35.0, "trq": 183.5},
-            {"rpm": 4500, "ptc": 38.5, "trq": 182.0},
-            {"rpm": 4875, "ptc": 42.0, "trq": 180.5},
-            {"rpm": 5250, "ptc": 45.5, "trq": 179.0},
-            {"rpm": 5625, "ptc": 49.0, "trq": 177.5},
-            {"rpm": 6000, "ptc": 52.5, "trq": 176.0},
-            {"rpm": 6375, "ptc": 56.0, "trq": 174.5},
-            {"rpm": 6750, "ptc": 59.5, "trq": 173.0},
-            {"rpm": 7000, "ptc": 63.0, "trq": 171.5},
-            {"rpm": 7375, "ptc": 66.0, "trq": 167.5},
-            {"rpm": 7750, "ptc": 69.0, "trq": 163.5},
-            {"rpm": 8125, "ptc": 72.0, "trq": 159.5},
-            {"rpm": 8500, "ptc": 75.0, "trq": 155.5},
-            {"rpm": 8875, "ptc": 77.5, "trq": 151.5},
-            {"rpm": 9250, "ptc": 80.0, "trq": 147.5},
-            {"rpm": 9625, "ptc": 81.5, "trq": 143.5},
-            {"rpm": 10000, "ptc": 83.0, "trq": 139.5},
-            {"rpm": 10375, "ptc": 84.5, "trq": 135.5},
-            {"rpm": 10750, "ptc": 86.0, "trq": 131.5},
-            {"rpm": 11125, "ptc": 87.5, "trq": 127.5},
-            {"rpm": 11500, "ptc": 89.0, "trq": 123.5},
-            {"rpm": 11875, "ptc": 90.5, "trq": 119.5},
-            {"rpm": 12250, "ptc": 92.0, "trq": 115.5},
-            {"rpm": 12625, "ptc": 93.5, "trq": 111.5},
-            {"rpm": 13000, "ptc": 95.0, "trq": 107.5},
-            {"rpm": 13375, "ptc": 96.5, "trq": 103.5},
-            {"rpm": 13750, "ptc": 98.0, "trq": 99.5},
-            {"rpm": 14125, "ptc": 99.5, "trq": 95.5},
-            {"rpm": 14500, "ptc": 100.0, "trq": 91.5},
-            {"rpm": 14875, "ptc": 100.0, "trq": 87.5},
-            {"rpm": 15000, "ptc": 100.0, "trq": 85.0}
+            {"rpm": 0, "ptc": 0.0, "trq": 205.89},
+            {"rpm": 375, "ptc": 8.0742858188337, "trq": 205.61},
+            {"rpm": 750, "ptc": 16.1100871276608, "trq": 205.12},
+            {"rpm": 1125, "ptc": 24.1521716217951, "trq": 205.01},
+            {"rpm": 1500, "ptc": 32.1824751434784, "trq": 204.88},
+            {"rpm": 1875, "ptc": 40.1318826543315, "trq": 204.39},
+            {"rpm": 2250, "ptc": 48.1182038788644, "trq": 204.22},
+            {"rpm": 2625, "ptc": 56.1159133767666, "trq": 204.14},
+            {"rpm": 3000, "ptc": 64.0853485407864, "trq": 203.99},
+            {"rpm": 3375, "ptc": 71.9475768555021, "trq": 203.57},
+            {"rpm": 3750, "ptc": 79.894628171865, "trq": 203.45},
+            {"rpm": 4125, "ptc": 87.7372215324957, "trq": 203.11},
+            {"rpm": 4500, "ptc": 95.5531113555708, "trq": 202.77},
+            {"rpm": 4875, "ptc": 103.418873962022, "trq": 202.58},
+            {"rpm": 5250, "ptc": 111.242225067649, "trq": 202.34},
+            {"rpm": 5625, "ptc": 119.04083613113, "trq": 202.09},
+            {"rpm": 6000, "ptc": 126.926626390747, "trq": 202.01},
+            {"rpm": 6375, "ptc": 134.826161118224, "trq": 201.96},
+            {"rpm": 6750, "ptc": 142.31885959706, "trq": 201.34},
+            {"rpm": 7125, "ptc": 148.748128962653, "trq": 199.36},
+            {"rpm": 7500, "ptc": 155.304632830716, "trq": 197.74},
+            {"rpm": 7875, "ptc": 161.733902196308, "trq": 196.12},
+            {"rpm": 8250, "ptc": 168.856678140183, "trq": 195.45},
+            {"rpm": 8625, "ptc": 174.599116811882, "trq": 193.31},
+            {"rpm": 9000, "ptc": 179.702241378574, "trq": 190.67},
+            {"rpm": 9375, "ptc": 182.36945354148, "trq": 185.76},
+            {"rpm": 9750, "ptc": 184.007794110332, "trq": 180.22},
+            {"rpm": 10125, "ptc": 184.850526339661, "trq": 174.34},
+            {"rpm": 10500, "ptc": 184.230847188738, "trq": 167.55},
+            {"rpm": 10875, "ptc": 183.715625993548, "trq": 161.32},
+            {"rpm": 11250, "ptc": 179.600925015495, "trq": 152.45},
+            {"rpm": 11625, "ptc": 171.247037450491, "trq": 140.67},
+            {"rpm": 12000, "ptc": 167.949543261456, "trq": 133.65},
+            {"rpm": 12375, "ptc": 157.815550759106, "trq": 121.78},
+            {"rpm": 12750, "ptc": 144.799932395241, "trq": 108.45},
+            {"rpm": 13125, "ptc": 134.393406730191, "trq": 97.78},
+            {"rpm": 13500, "ptc": 122.823706385146, "trq": 86.88},
+            {"rpm": 13875, "ptc": 112.824409667819, "trq": 77.65},
+            {"rpm": 14250, "ptc": 103.622292086342, "trq": 69.44},
+            {"rpm": 14625, "ptc": 91.6771714191918, "trq": 59.86},
+            {"rpm": 15000, "ptc": 74.565701633196, "trq": 47.47}
         ]
 
-        # Print dos resultados obtidos
-        print("Resultados:")
-        print("Peso:", peso)
-        print("Reação no eixo traseiro (N):", rnet)
-        print("Reação no eixo dianteiro (N):", rned)
-        print("Força de tração resultante:", ftr)
-        print("Torque de deslocamento da carga:", tdcl)
-        print("Força vertical sobre o eixo:", cnet)
-        print("Potência total transmitida pelo eixo:", ptet)
-        print("Carga vertical no pneu:", cpneu)
-        print("Torque transmitido pelo pneu:", tpneu)
-        print("Redução final:", redf)
-        print("Torque na roda:", tpwt)
-        print("Aceleração resultante:", acpr)
-        print("Aceleração de frenagem:", acfi)
-        print("Aceleração de frenagem na roda:", acfr)
-        print("Força de tração inicial:", fti)
-        print("Torque na entrada da roda:", tpi)
-        print("Torque na entrada da roda com a transmissão:", tpwti)
-        print("Torque transmitido pela coroa:", tci)
-        print("Torque transmitido pelo conjunto coroa-pinhão:", tcr)
-        print("Carga transmitida pela engrenagem ao eixo traseiro:", cteti)
+     # Print dos resultados obtidos
+    print("Resultados:")
+    print("Peso:", peso, "kg")
+    print("Reação no eixo traseiro:", rnet, "N")
+    print("Reação no eixo dianteiro:", rned, "N")
+    print("Força de tração resultante:", ftr, "N")
+    print("Torque de deslocamento da carga:", tdcl, "Nm")
+    print("Força vertical sobre o eixo:", cnet, "N")
+    print("Potência total transmitida pelo eixo:", ptet, "kW")
+    print("Carga vertical no pneu:", cpneu, "N")
+    print("Torque transmitido pelo pneu:", tpneu, "Nm")
+    print("Redução final:", redf)
+    print("Torque na roda:", tpwt, "Nm")
+    print("Aceleração resultante:", acpr)
+    print("Aceleração de frenagem:", acfi, "m/s²")
+    print("Aceleração de frenagem na roda:", acfr, "m/s²")
+    print("Força de tração inicial:", fti, "N")
+    print("Torque na entrada da roda:", tpi, "Nm")
+    print("Torque na entrada da roda com a transmissão:", tpwti, "Nm")
+    print("Torque transmitido pela coroa:", tci, "Nm")
+    print("Torque transmitido pelo conjunto coroa-pinhão:", tcr, "Nm")
+    print("Carga transmitida pela engrenagem ao eixo traseiro:", cteti, "N")
 
-        print("\nMatriz de RPM, Torque e Potência:")
-        print("RPM\t\tTorque (Nm)\tPotência (%)")
-        for data in matriz_dados:
-            rpm = data["rpm"]
-            trq = data["trq"]
-            ptc = data["ptc"]
-            print("{:.2f}\t\t{:.2f}\t\t{:.2f}".format(rpm, trq, ptc))
+    print("\nMatriz de RPM, Torque e Potência:")
+    print("RPM\t\tTorque (Nm)\tPotência (%)")
+    for data in matriz_dados:
+        rpm = data["rpm"]
+        trq = data["trq"]
+        ptc = data["ptc"]
+        print("{:.2f}\t\t{:.2f}\t\t{:.2f}".format(rpm, trq, ptc))
 
-        # Plotando o gráfico
-        rpm_values, torque_values, power_values = self.CurveTorquePower(matriz_dados)
-        plt.figure(figsize=(10, 6))
-        plt.plot(rpm_values, torque_values, label="Torque")
-        plt.plot(rpm_values, power_values, label="Potência")
-        plt.title("Curva de Torque e Potência")
-        plt.xlabel("RPM")
-        plt.ylabel("Torque / Potência")
-        plt.legend()
-        plt.grid(True)
-        plt.show()
+    # Plotando o gráfico
+    rpm_values, torque_values, power_values = self.CurveTorquePower(matriz_dados)
+    plt.figure(figsize=(10, 6))
+    plt.plot(rpm_values, torque_values, label="Torque")
+    plt.plot(rpm_values, power_values, label="Potência")
+    plt.title("Curva de Torque e Potência")
+    plt.xlabel("RPM")
+    plt.ylabel("Torque / Potência")
+    plt.legend()
+    plt.grid(True)
+    plt.show()
 
-        return peso, rnet, rned, ftr, tdcl, cnet, ptet, cpneu, tpneu, redf, tpwt, acpr, acfi, acfr, fti, tpi, tpwti, tci, tcr, cteti, matriz_dados
+    return peso, rnet, rned, ftr, tdcl, cnet, ptet, cpneu, tpneu, redf, tpwt, acpr, acfi, acfr, fti, tpi, tpwti, tci, tcr, cteti, matriz_dados
 
-        # Criando uma instância da classe e chamando o método Transmission
-        dynamics = Dynamics()
-        cgx = 853  # mm
-        cgy = 294  # mm
-        massa = 347  # kg
-        etex = 1567  # mm
-        cfat = 0.9  # coeficiente de atrito
-        rpneu = 259  # mm
-        acpi = 1.2  # g
-        redp = 2.12  # redução primária
-        red1 = 2.76  # redução da marcha única
-        cp = 4  # relação coroa-pinhão
-        dynamics.Transmission(cgx, cgy, massa, etex, cfat, rpneu, acpi, redp, red1, cp)
+    # Criando uma instância da classe e chamando o método Transmission
+    dynamics = Dynamics()
+    cgx = 853  # mm
+    cgy = 294  # mm
+    massa = 347  # kg
+    etex = 1567  # mm
+    cfat = 0.9  # coeficiente de atrito
+    rpneu = 259  # mm
+    acpi = 1.2  # g
+    redp = 2.12  # redução primária
+    red1 = 2.76  # redução da marcha única
+    cp = 4  # relação coroa-pinhão
+    dynamics.Transmission(cgx, cgy, massa, etex, cfat, rpneu, acpi, redp, red1, cp)
         
        
 
