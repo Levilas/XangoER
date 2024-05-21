@@ -348,6 +348,8 @@ class Dynamics:
         print("Força Trativa [N]\tVelocidade Angular [rad/s]\tVelocidade Linear [m/s]\tForça de Arrasto [N]\tResistência de Rolamento [N]\tForça Final [N]")
         for param in parametros:
             print(f"{param['ftf']}\t{param['va']}\t{param['vl']}\t{param['fa']}\t{param['rr']}\t{param['ff']}")
+
+    dynamics.CarPerformance()
             
     def HalfShaftsSizing(self, fsi=1.25, tet=786, tec=471.6, dif=1):
         # Considerando o uso do aço 4340
@@ -381,7 +383,6 @@ class Dynamics:
     
         return tmax, tmsx, tmp, dsx, fso, fs1p
 
-    dynamics.CarPerformance()
     dynamics.HalfShaftsSizing()
 
 
