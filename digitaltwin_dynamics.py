@@ -348,8 +348,42 @@ class Dynamics:
         print("Força Trativa [N]\tVelocidade Angular [rad/s]\tVelocidade Linear [m/s]\tForça de Arrasto [N]\tResistência de Rolamento [N]\tForça Final [N]")
         for param in parametros:
             print(f"{param['ftf']}\t{param['va']}\t{param['vl']}\t{param['fa']}\t{param['rr']}\t{param['ff']}")
+            
+    def HalfShaftsSizing(self, fsi=1.25, tet=786, tec=471.6, dif=1):
+        # Considerando o uso do aço 4340
+        # Obtendo o maior torque do motor a partir dos dados experimentais 
+        tmax = max(data["trq"] for data in matriz_dados)
+    
+        # Calculando o torque máximo nos semieixos
+        tmsx = tmax * redp * red1 * cp * dif
+    
+        # Calculando o torque máximo de projeto
+        tmp = tmsx * fsi
+    
+        # Calculando o diâmetro dos semieixos (mm)
+        dsx = (((2 * tmp) / (math.pi * tec * 10 ** 6)) ** (1 / 3)) * 2000
+    
+        # Calculando o fator de segurança obtido
+        fso = (math.pi * (((dsx / 1000) / 2) ** 3) * tec * (10 ** 6)) / (2 * tmsx)
+    
+        # Calculando o fator de segurança para 1 polegada
+        fs1p = (math.pi * ((0.0254 / 2) ** 3) * tec * (10 ** 6)) / (2 * tmsx)
+    
+        # Print dos resultados obtidos
+        print("Dimensionamento dos Semieixos:")
+        print("Torque máximo do motor:", tmax, "Nm")
+        print("Torque máximo nos semieixos:", tmsx, "Nm")
+        print("Torque máximo de projeto:", tmp, "Nm")
+        print("Diâmetro dos semieixos:", dsx, "mm")
+        print("Fator de segurança ideal:", fsi)
+        print("Fator de segurança obtido:", fso)
+        print("Fator de segurança para 1 polegada:", fs1p)
+    
+        return tmax, tmsx, tmp, dsx, fso, fs1p
 
     dynamics.CarPerformance()
+    dynamics.HalfShaftsSizing()
+
 
         
        
